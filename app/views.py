@@ -6,5 +6,5 @@ from .serializers import TweetSerializer
 from rest_framework import viewsets
 
 class TweetViewSet(viewsets.ModelViewSet):
-    queryset = Tweet.objects.all().order_by('-datetime')
+    queryset = Tweet.objects.order_by('-datetime')
     serializer_class = TweetSerializer
